@@ -8,13 +8,13 @@ enum State { red, red_yellow, yellow, green };
 
 State g_CurrentState = red;
 
-void setup() {
+void Setup() {
   pinMode(LED_RED, OUTPUT);
   pinMode(LED_YELLOW, OUTPUT);
   pinMode(LED_GREEN, OUTPUT);
 }
 
-void loop() {
+void Loop() {
   switch (g_CurrentState) {
   case red:
     digitalWrite(LED_RED, true);
